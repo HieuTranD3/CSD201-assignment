@@ -1,0 +1,30 @@
+1. Cấu trúc dữ liệu sắp xếp theo khối lượng
+Để tổ chức dữ liệu theo thứ tự khối lượng, cấu trúc dữ liệu phù hợp nhất là Cây tìm kiếm nhị phân cân bằng (Balanced Binary Search Tree) hoặc Cây AVL.
+Cây AVL là một cấu trúc dữ liệu lý tưởng cho việc quản lý dữ liệu có thứ tự, đặc biệt khi cần thực hiện các thao tác tìm kiếm, chèn và xóa thường xuyên.
+
+Việc sử dụng cây AVL giúp đảm bảo rằng dữ liệu luôn được cân bằng, tránh tình trạng cây bị lệch (unbalanced), từ đó duy trì hiệu suất tối ưu.
+Ưu điểm:
+
+Tìm kiếm hiệu quả: Cung cấp độ phức tạp thời gian O(log n) cho các thao tác tìm kiếm, chèn và xóa phần tử.
+
+Dữ liệu được sắp xếp: Giữ dữ liệu theo thứ tự đã sắp xếp, giúp truy cập nhanh đến phần tử lớn hơn hoặc nhỏ hơn tiếp theo.
+
+Linh hoạt: Có thể điều chỉnh động khi các hành tinh được thêm vào hoặc xóa đi.
+
+Nhược điểm:
+
+Độ phức tạp: Phức tạp hơn trong việc triển khai so với các cấu trúc đơn giản như mảng hoặc danh sách liên kết.
+
+Chi phí bộ nhớ: Yêu cầu thêm bộ nhớ cho các con trỏ và duy trì cân bằng cây.
+
+2. Xử lý dữ liệu theo đường kính xích đạo
+Để xử lý các đối tượng theo thứ tự đường kính xích đạo, có thể sử dụng một số cấu trúc dữ liệu sau:
+
+Array: Cho phép truy cập dễ dàng đến các phần tử, nhưng việc sắp xếp có thể yêu cầu thời gian O(n log n).
+
+Linked list: Có thể chèn các phần tử theo bất kỳ thứ tự nào, nhưng thời gian truy cập là O(n).
+
+Binary search tree: Hỗ trợ các thao tác sắp xếp hiệu quả, tương tự như cây AVL.
+
+Cấu trúc dữ liệu hiệu quả nhất:
+Cây tìm kiếm nhị phân cân bằng (AVL Tree) sẽ là cấu trúc dữ liệu hiệu quả nhất cho nhiệm vụ này nhờ khả năng tự cân bằng, cho phép chèn và truy xuất nhanh chóng theo thứ tự đã sắp xếp.
